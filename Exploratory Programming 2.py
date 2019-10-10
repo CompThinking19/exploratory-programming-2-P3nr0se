@@ -1,78 +1,72 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[21]:
+# In[3]:
 
 
 fingers = [-2 ,-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
-# In[22]:
+# In[4]:
 
 
 print fingers
 
 
-# In[26]:
+# In[5]:
 
 
-def positive():
-    positive() >= 1
+x = len(fingers)
 
 
-# In[30]:
+# In[6]:
 
 
-def negative():
-    negative() <= -1
+print x
 
 
-# In[ ]:
+# In[77]:
 
 
-# made function that returns true for each positive number
+def positive(list):
+   positive is float in list > 0
 
 
-# In[38]:
+# In[82]:
 
 
-def bepositive(sequence):
-    result = [sequence]
-    for positive in sequence:
-        print "true"
-    return result
+#This function will run only if there is no negative in the list. I'm notably having trouble creating a function that will create a list of exclusively positive numbers
 
 
-# In[ ]:
+# In[78]:
 
 
+def howpositive(list):
+    y = []
+    for element in list:
+        if (element < 0):
+            raise TypeError("No negativity!")
+    for element in list:
+        if (element > 0):
+            print element
+    
+    
 
 
-
-# In[39]:
-
-
-bepositive(fingers)
-
-
-# In[ ]:
-
-
-#attempting and failing to create a function that removes negatives from the list
-
-
-# In[50]:
-
-
-def howpositive(sequence):
-    result = [sequence]
-    for negative in sequence:
-        set(sequence) >= 1
-    return result
-
-
-# In[52]:
+# In[79]:
 
 
 howpositive(fingers)
+
+
+# In[80]:
+
+
+hand = [1, 2, 3, 4, 5]
+
+
+# In[81]:
+
+
+howpositive(hand)
 
